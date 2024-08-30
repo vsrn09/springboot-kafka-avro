@@ -17,7 +17,7 @@ public class StudentProducer {
     private final ConfigProperties configProperties;
 
     public String send(Student student) {
-        kafkaTemplate.send(configProperties.getStudentTopic(), student.getId(), student);
+        kafkaTemplate.send(configProperties.getStudentTopic(), (String)student.getId(), student);
         log.info(String.format("#### -> Producing message -> %s", new Gson().toJson(student)));
         return "success";
     }
