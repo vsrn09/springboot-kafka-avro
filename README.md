@@ -170,6 +170,46 @@ These additional references should also help you:
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
 
+import lombok.Data;
+
+import java.util.Map;
+
+@Data
+public class ObpyRetOnboardGenerated {
+    private String branchCode;
+    private String userId;
+    private String date;
+    private String time;
+    private String applicationNumber;
+    private String handoffStatus;
+    private String sourceProductId;
+    private String eventType;
+    private String externalCustomerNumber;
+    private String isKycCompliant;
+    private String partyCategory;
+    private String partyType;
+    private String rmId;
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    private String residentStatus;
+    private String uniqueId;
+    private String customerSegment;
+    private String partySubType;
+    private String isCustomer;
+    private String isStaff;
+    private String isInsider;
+    private String isSpecial;
+    private String isArmedForce;
+    private String isPep;
+    private String isMla;
+    private String isMinor;
+    private String isBlacklisted;
+    private String isProspect;
+    private String amendDateTime;
+    private String applicationDate;
+    private Map<String, String> onboardPayload;
+}
 
 
 
